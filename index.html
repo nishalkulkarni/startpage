@@ -1,36 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="main.js"></script>
-</head>
+  </head>
 
-<body onload="startTime()">
-    <div class="greeting">
-        <h2>Good Evening, Nishal.</h2>
-    </div>
-    <div class="clock">
-        <div id="clockdate">
-            <div class="clockdate-wrapper">
-                <h1 id="clock"></h1>
-                <h3 id="date"></h3>
-            </div>
+  <body onload="startTime()">
+    <div class="page">
+      <div class="section-one">
+        <div>
+          <h2 id="greeting">Good Evening, Nishal.</h2>
         </div>
-    </div>
-    <div class="search"></div>
-    <div class="weather"></div>
-    <div class="news"></div>
-    <div class="browse">
-        <div class="mostused"></div>
-        <div class="history"></div>
-    </div>
+        <div class="search">
+          <form method="get" action="https://www.google.com/search">
+            <input type="text" name="q" value="" placeholder="Search Google" />
+          </form>
+        </div>
 
-</body>
+        <div class="browse">
+          <div class="most-used">
+                <h5>Most Used</h5>
+          </div>
+          <div class="history">
+                <h5>History</h5>
+          </div>
+        </div>
+      </div>
 
+      <div class="section-two">
+        <div class="clock-date">
+          <h1 id="clock"></h1>
+          <h4 id="date"></h4>
+        </div>
+        <div class="weather"></div>
+        <div class="news">
+          <h5>Headlines</h5>
+          <!-- https://newsapi.org/ -->
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

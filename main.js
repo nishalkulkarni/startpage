@@ -1,9 +1,12 @@
+var name='Nishal';
 function startTime() {
     var today = new Date();
-    var hr = today.getHours();
-    var min = today.getMinutes();
+    var hr = parseInt(today.getHours());
+    var min = parseInt(today.getMinutes());
     //Add a zero in front of numbers<10
-    min = checkTime(min);
+    if (min < 10) {
+        min = "0" + min;
+    }
     document.getElementById("clock").innerHTML = hr + ":" + min;
     
     var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
@@ -13,13 +16,15 @@ function startTime() {
     var curMonth = months[today.getMonth()];
     var date = curWeekDay+", "+curDay+" "+curMonth;
     document.getElementById("date").innerHTML = date;
-    
-    var time = setTimeout(function(){ startTime() }, 1000);
-}
 
-function checkTime(i) {
-    if (i < 10) {
-        i = "0" + i;
+    var greettime = 'evening';
+    if(hr>=0&&hr<12){
+        greettime = 'morning';
+    }else if(hr>=12&&hr<17){
+        greettime = 'afternoon';
     }
-    return i;
+    var greeting = 'Good '+greettime+', '+name+'.';
+    document.getElementById("greeting").innerHTML = greeting;
+
+    var time = setTimeout(function(){ startTime() }, 1000);
 }
