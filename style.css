@@ -20,6 +20,24 @@ body {
   
 }
 
+.settings-button{
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    background-image: none;
+    background-color: transparent;
+    box-shadow: none;
+    color: black;
+    right: calc(10vw );
+}
+
+.settings-button:focus{
+    transform: rotate(270deg);
+    color: crimson;
+    transition: 1s;
+    
+}
+
 .section-one {
   width: 75%;
   float: left;
