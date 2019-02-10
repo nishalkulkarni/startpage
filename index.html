@@ -1,48 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
 
-    <link rel="stylesheet" href="style.css" />
-    <script src="main.js"></script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Welcome!</title>
 
-  <body onload="startTime()">
-    <div class="page">
-      <div class="section-one">
-        <div>
-          <h2 id="greeting">Good Evening, Nishal.</h2>
-        </div>
-        <div class="search">
-          <form method="get" action="https://www.google.com/search">
-            <input type="text" name="q" value="" placeholder="Search Google" />
-          </form>
-        </div>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</head>
 
-        <div class="browse">
-          <div class="most-used">
-                <h5>Most Used</h5>
-          </div>
-          <div class="history">
-                <h5>History</h5>
-          </div>
-        </div>
+<body onload="startTime()">
+  <div class="page">
+    <div class="section-one">
+      <div>
+        <h2 id="greeting">Good Evening, Nishal.</h2>
       </div>
-
-      <div class="section-two">
-        <div class="clock-date">
-          <h1 id="clock"></h1>
-          <h4 id="date"></h4>
-        </div>
-        <div class="weather"></div>
-        <div class="news">
-          <h5>Headlines</h5>
-          <!-- https://newsapi.org/ -->
-        </div>
+      <form class="search" method="get" action="https://www.google.com/search">
+        <img src="glogo.png" alt="Google">
+        <input type="search" name="q" value="" placeholder="Search the Web" />
+        <button type="submit"><i class="fas fa-search"></i></button>
+      </form>
+      <div class="browse">
+          <h5>Most Used</h5>
       </div>
     </div>
-  </body>
+
+    <div class="section-two">
+      <div class="clock-date">
+        <h1 id="clock"></h1>
+        <h4 id="date"></h4>
+      </div>
+      <div class="weather"></div>
+      <div class="news">
+        <h5>Headlines</h5>
+        <!-- https://newsapi.org/ -->
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>

@@ -1,64 +1,109 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
 body {
-    font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-input{
-    width: 96%;;
-    padding: 0.5rem 0;
-    box-shadow: 0 0 20px rgba(43, 45, 66,0.05);
-    margin: 1rem 0;
+input {
+  /* width: 60%; */
+  /* padding: 0.5rem 0; */
+  /* box-shadow: 0 0 20px rgba(43, 45, 66,0.05); */
+  /* margin: 1rem 0; */
 }
 
-.page{
-    width: 80vw;
-    height: 80vh;
-    border-radius: 8px;
-    padding: 1rem;
-    margin: 7vh auto 0;
+.page {
+  width: 80%;
+  height: 80vh;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 7vh auto 0;
 }
 
-.section-one{
-    width: 75%;
-    float: left;
-    margin-top: 20vh;
+.section-one {
+  width: 75%;
+  float: left;
+  margin-top: 20vh;
+}
+.section-two {
+  width: 25%;
+  float: right;
+  margin-top: 20vh;
+}
 
-}
-.section-two{
-    width: 25%;
-    float: right;
-    margin-top: 20vh;
+#greeting {
+  text-align: center;
 }
 
-#greeting{
-    text-align: center;
+.search {
+  height: 3rem;
+  background: white;
+  margin: 0.5rem 3rem 1rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 }
+
+.search img {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 12px;
+  float: left;
+}
+
+.search input {
+  height: 48px;
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  box-shadow: none;
+  width: calc(100% - 96px);
+  font-weight: 500;
+}
+
+.search button {
+  cursor: pointer;
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  box-shadow: none;
+  width: 3rem;
+  height: 3rem;
+  float: right;
+  border-radius: 0 8px 8px 0;
+}
+
+.search button:hover {
+  background: rgba(12, 12, 13, 0.1);
+  transition: 0.5s;
+}
+
+.browse{
+    margin-left: 2.5rem;
+}
+
 
 /* Day CSS */
 
-body{
-    background: rgba(141, 153, 174,0.65);
+body {
+  background: rgba(141, 153, 174, 0.65);
 }
 
-.page{
-    background: #edf2f4;    
-    box-shadow: 0 0 50px rgba(43, 45, 66,0.1);
+.page {
+  background: #edf2f4;
+  box-shadow: 0 0 50px rgba(43, 45, 66, 0.1);
 }
 
 /* Night CSS */
 
-body{
-    background: rgba(43, 45, 66,1);
+body {
+  background: rgba(43, 45, 66, 1);
 }
 
-.page{
-    background: #edf2f4;   
-    box-shadow: 0 0 50px rgba(237, 242, 244,0.2);
+.page {
+  background: #edf2f4;
+  box-shadow: 0 0 50px rgba(237, 242, 244, 0.15);
 }
-
