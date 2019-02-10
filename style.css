@@ -2,6 +2,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
+  height: 100%;
 }
 
 * {
@@ -9,19 +10,14 @@ body {
   margin: 0;
 }
 
-input {
-  /* width: 60%; */
-  /* padding: 0.5rem 0; */
-  /* box-shadow: 0 0 20px rgba(43, 45, 66,0.05); */
-  /* margin: 1rem 0; */
-}
-
 .page {
   width: 80%;
-  height: 80vh;
+  min-height: 80vh;
   border-radius: 8px;
   padding: 1rem;
-  margin: 7vh auto 0;
+  margin: 7vh auto ;
+  overflow: hidden;
+  
 }
 
 .section-one {
@@ -33,6 +29,7 @@ input {
   width: 25%;
   float: right;
   margin-top: 20vh;
+  
 }
 
 #greeting {
@@ -82,18 +79,66 @@ input {
 }
 
 .browse{
-    margin-left: 2.5rem;
+    margin: 0 3rem 0 2.5rem;
 }
+
+.browse h5{
+    margin-bottom: 0.5rem; 
+}
+
+.tabs-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+}
+
+.link-tab{
+    height: 120px;
+    /* width: 160px; */
+    background: white;
+    /* margin: 18px 0 0 ; */
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* .weather{
+    margin-top: 5px;
+} */
+
+.weather-card{
+    width: 90%;
+    height: 20vh;
+    background: white;
+    margin: 8px 0 0 0;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.news{
+    margin-top: 5px;
+}
+.news-tab{
+    width: 90%;
+    height: 10vh;
+    background: white;
+    margin: 8px 0 0 0;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
 
 
 /* Day CSS */
 
 body {
-  background: rgba(141, 153, 174, 0.65);
+  background: #edf2f4;
+  color: white;
 }
 
 .page {
-  background: #edf2f4;
+    background: rgba(43, 45, 66, 1);
   box-shadow: 0 0 50px rgba(43, 45, 66, 0.1);
 }
 
@@ -101,6 +146,7 @@ body {
 
 body {
   background: rgba(43, 45, 66, 1);
+  color: black;
 }
 
 .page {
