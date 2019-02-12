@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import 'https://fonts.googleapis.com/css?family=Lato:300';
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -15,27 +16,26 @@ body {
   min-height: 80vh;
   border-radius: 8px;
   padding: 1rem;
-  margin: 7vh auto ;
+  margin: 7vh auto;
   overflow: hidden;
-  
 }
 
-.settings-button{
-    position: absolute;
-    cursor: pointer;
-    border: none;
-    background-image: none;
-    background-color: transparent;
-    box-shadow: none;
-    color: black;
-    right: calc(10vw );
+.settings-button {
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  box-shadow: none;
+  color: black;
+  right: calc(10vw);
 }
 
-.settings-button:focus{
-    transform: rotate(270deg);
-    color: crimson;
-    transition: 1s;
-    
+.settings-button:focus {
+  transform: rotate(270deg);
+  color: crimson;
+  transition: 1s;
+
 }
 
 .section-one {
@@ -43,11 +43,12 @@ body {
   float: left;
   margin-top: 20vh;
 }
+
 .section-two {
   width: 25%;
   float: right;
   margin-top: 20vh;
-  
+
 }
 
 #greeting {
@@ -96,55 +97,155 @@ body {
   transition: 0.5s;
 }
 
-.browse{
-    margin: 0 3rem 0 2.5rem;
+.browse {
+  margin: 0 3rem 0 2.5rem;
 }
 
-.browse h5{
-    margin-bottom: 0.5rem; 
+.browse h5 {
+  margin-bottom: 0.5rem;
 }
 
-.tabs-section{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 1rem;
-    /* flex-wrap: wrap; */
-    /* justify-content: space-between; */
+.tabs-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  grid-gap: 1rem;
 }
 
-.link-tab{
-    height: 120px;
-    /* width: 160px; */
-    background: white;
-    /* margin: 18px 0 0 ; */
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+.link-tab {
+  height: 120px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link-tab:hover {
+  background: rgba(12, 12, 13, 0.07);
+  transition: 0.5s;
+}
+
+.link-tab a {
+  cursor: pointer;
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  box-shadow: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link-tab a:hover {
+  background: rgba(12, 12, 13, 0.12);
+  transition: 0.5s;
+}
+
+.add-tab a {
+  background: url(add-button.svg) no-repeat center;
+}
+
+.add-tab a:hover {
+  background: url(add-button.svg) no-repeat center, rgba(12, 12, 13, 0.12);
+  transition: 0.5s;
 }
 
 /* .weather{
     margin-top: 5px;
 } */
 
-.weather-card{
-    width: 90%;
-    height: 20vh;
-    background: white;
-    margin: 8px 0 0 0;
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+.weather-card {
+  width: 90%;
+  height: 20vh;
+  background: white;
+  margin: 8px 0 0 0;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
-.news{
-    margin-top: 5px;
+.temperature {
+  font-family: 'Lato', cursive;
+  font-weight: 100;
+  color: #888;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  
 }
-.news-tab{
-    width: 90%;
-    height: 10vh;
-    background: white;
-    margin: 8px 0 0 0;
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+.temperature span {
+  vertical-align: top;
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 2px;
 }
+
+.weather-icon{
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+  width: 100%;
+  height: 100%;
+  background: url(weathericons/cloudy_night_snowy_rainy.svg) no-repeat center;
+  background-size: contain;
+  filter: invert(0.65);
+
+}
+
+
+
+
+
+.news {
+  margin-top: 5px;
+}
+
+.news-tab {
+  width: 90%;
+  height: 10%;
+  background: white;
+  margin: 8px 0 0 0;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  /* padding: 0.5rem; */
+  position: relative;
+  display: flex;
+}
+
+.news-left{
+  width: 10vh;
+  /* height: 10vh; */
+  background: rgba(12,12 ,13, 0.1);
+  
+}
+.news-right{
+  width: calc(100% - 10vh);
+  float: right;
+  margin-left: 3px; 
+}
+
+.news-title{
+  font-weight: 600;
+}
+
+.news-snippet{
+  font-weight: 300;
+}
+
 
 
 
@@ -156,7 +257,7 @@ body {
 }
 
 .page {
-    background: rgba(43, 45, 66, 1);
+  background: rgba(43, 45, 66, 1);
   box-shadow: 0 0 50px rgba(43, 45, 66, 0.1);
 }
 
