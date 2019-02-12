@@ -1,7 +1,7 @@
 Custom Startpage
 ---
-![Screenshot of startpage](Screenshot.png)
-
+![Screenshot of startpage](/Screenshot.png?raw=true)
+---
 Startpage for web browser using only HTML, CSS & JS.
 ---
 To Do (*Need Help with this stuff*)
