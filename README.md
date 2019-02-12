@@ -1,5 +1,9 @@
 Custom Startpage
 ---
+![alt text][logo]
+
+[logo]: Screenshot.png "Screenshot of startpage"
+---
 Startpage for web browser using only HTML, CSS & JS.
 ---
 To Do (*Need Help with this stuff*)
