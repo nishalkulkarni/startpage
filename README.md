@@ -1,3 +1,5 @@
+##Custom Startpage
+---
 ###Startpage for web browser using only HTML, CSS & JS.
 ---
 ####To Do (*Need Help with this stuff*)
@@ -8,5 +10,5 @@
 * live news 
 * live weather 
 * settings
-* favicon retriever & updater
-
+* favicon retriever & updater in quick links section
+* setup settings page
