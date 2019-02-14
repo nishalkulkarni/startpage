@@ -8,9 +8,8 @@ To Do (*Need Help with this stuff*)
 
 * notes applet
 * personal email update section
-* Quick links -started
+* Quick links - (Add tab feature incomplete)
 * live news 
-* live weather 
-* settings
+* live weather (90% complete)
 * favicon retriever & updater in quick links section
 * setup settings page
