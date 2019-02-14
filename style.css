@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
-@import 'https://fonts.googleapis.com/css?family=Lato:300';
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -162,10 +162,6 @@ body {
   transition: 0.5s;
 }
 
-/* .weather{
-    margin-top: 5px;
-} */
-
 .weather-card {
   width: 90%;
   height: 20vh;
@@ -179,11 +175,10 @@ body {
 .temperature {
   font-family: 'Lato', cursive;
   font-weight: 100;
-  color: #888;
+  color: #585757;
   position: absolute;
-  bottom: 1rem;
-  left: 1rem;
-  
+  bottom: 0.5rem;
+  left: 0.5rem;
 }
 
 .temperature span {
@@ -193,21 +188,38 @@ body {
   margin-left: 2px;
 }
 
-.weather-icon{
+.weather-icon {
   position: absolute;
   top: 0rem;
   right: 0rem;
-  width: 100%;
-  height: 100%;
+  width: 70%;
+  height: 70%;
   background: url(weathericons/cloudy_night_snowy_rainy.svg) no-repeat center;
-  background-size: contain;
-  filter: invert(0.65);
-
+  display: relative;
 }
 
+#icon-description {
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 14px;
+  color: #585757;
+  white-space: nowrap;
+}
 
+.weather-credit {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  font-size: 12px;
+}
 
-
+.weather-credit a {
+  text-decoration: none;
+  font-family: 'Lato', cursive;
+  color: #0073db;
+}
 
 .news {
   margin-top: 5px;
@@ -217,40 +229,34 @@ body {
   width: 90%;
   height: 10%;
   background: white;
-  margin: 8px 0 0 0;
+  margin: 10px 0 0 0;
   border-radius: 8px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  /* padding: 0.5rem; */
   position: relative;
   display: flex;
 }
 
-.news-left{
+.news-left {
   width: 10vh;
-  /* height: 10vh; */
-  background: rgba(12,12 ,13, 0.1);
-  
-}
-.news-right{
-  width: calc(100% - 10vh);
-  float: right;
-  margin-left: 3px; 
+  background: rgba(12, 12, 13, 0.1);
 }
 
-.news-title{
+.news-right {
+  width: calc(100% - 10vh);
+  float: right;
+  margin-left: 3px;
+}
+
+.news-title {
   font-weight: 600;
 }
 
-.news-snippet{
+.news-snippet {
   font-weight: 300;
 }
 
-
-
-
-/* Day CSS */
-
+/* Alt Theme
 body {
   background: #edf2f4;
   color: white;
@@ -259,10 +265,9 @@ body {
 .page {
   background: rgba(43, 45, 66, 1);
   box-shadow: 0 0 50px rgba(43, 45, 66, 0.1);
-}
+} */
 
-/* Night CSS */
-
+/* Theme CSS */
 body {
   background: rgba(43, 45, 66, 1);
   color: black;
