@@ -1,140 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Hello!</title>
 
-    <link rel="stylesheet" href="style.css" />
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.7.1/js/all.js"
-      integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7"
-      crossorigin="anonymous"
-    ></script>
-    <script type="text/javascript" src="config.js"></script>
-    <script type="text/javascript" src="main.js"></script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Hello!</title>
 
-  <body onload="startTime()">
-    <div class="page">
-      <button class="settings-button">
-        <i class="fas fa-wrench fa-lg"></i>
-      </button>
-      <div class="section-one">
-        <div>
-          <h2 id="greeting">Good evening, Nishal.</h2>
-        </div>
-        <form
-          class="search"
-          method="get"
-          action="https://www.google.com/search"
-        >
-          <img src="glogo.png" alt="Google" />
-          <input type="search" name="q" value="" placeholder="Search the Web" />
-          <button type="submit"><i class="fas fa-search"></i></button>
-        </form>
-        <div class="browse">
-          <h5>Quick Links</h5>
-          <div class="tabs-section">
-            <div class="link-tab">
-              <a href="https://www.google.com"
-                ><img src="https://www.google.com/favicon.ico" width="32px"
-              /></a>
-            </div>
-            <div class="link-tab">
-              <a href="https://www.youtube.com"
-                ><img
-                  src="https://s.ytimg.com/yts/img/favicon_48-vflVjB_Qk.png"
-                  width="32px"
-              /></a>
-            </div>
-            <div class="link-tab">
-              <a href="https://www.reddit.com"
-                ><img src="https://www.reddit.com/favicon.ico" width="32px"
-              /></a>
-            </div>
-            <div class="link-tab">
-              <a href="https://www.amazon.in"
-                ><img src="https://www.amazon.in/favicon.ico" width="32px"
-              /></a>
-            </div>
-            <div class="link-tab">
-              <a href="https://www.stackoverflow.com"
-                ><img
-                  src="https://www.stackoverflow.com/favicon.ico"
-                  width="32px"
-              /></a>
-            </div>
-            <div class="link-tab">
-              <a href="https://www.steamcommunity.com"
-                ><img
-                  src="https://www.steamcommunity.com/favicon.ico"
-                  width="32px"
-              /></a>
-            </div>
-            <div class="link-tab">
-              <a href="https://www.primevideo.com"
-                ><img src="https://www.primevideo.com/favicon.ico" width="32px"
-              /></a>
-            </div>
-            <div class="link-tab add-tab">
-              <a href="https://www.google.com"></a>
-            </div>
-          </div>
-        </div>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="config.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+</head>
+
+<body onload="startTime()">
+  <div class="page">
+    <button class="settings-button">
+      <i class="fas fa-wrench fa-lg"></i>
+    </button>
+    <div class="section-one">
+      <div>
+        <h2 id="greeting">Good evening, Nishal.</h2>
       </div>
-
-      <div class="section-two">
-        <div class="clock-date">
-          <h1 id="clock"></h1>
-          <h4 id="date"></h4>
-        </div>
-        <div class="weather">
-          <h5>Weather</h5>
-          <div class="weather-card">
-            <h1 id="temp" class="temperature">29<span>C</span></h1>
-            <div id="temp-icon" class="weather-icon">
-              <p id="icon-description"></p>
-            </div>
-            <p class="weather-credit">
-              Powered by
-              <a
-                href="https://www.apixu.com/"
-                target="_blank"
-                title="Weather API"
-                >Apixu.com</a
-              >
-            </p>
+      <form class="search" method="get" action="https://www.google.com/search">
+        <img src="glogo.png" alt="Google" />
+        <input type="search" name="q" value="" placeholder="Search the Web" />
+        <button type="submit"><i class="fas fa-search"></i></button>
+      </form>
+      <div class="browse">
+        <h5>Quick Links</h5>
+        <div class="tabs-section">
+          <div class="link-tab">
+            <a href="https://www.google.com"><img src="https://www.google.com/favicon.ico" width="32px" /></a>
           </div>
-        </div>
-        <div class="news">
-          <h5>Headlines</h5>
-
-          <div class="news-tab">
-            <div class="news-left"></div>
-            <div class="news-right">
-              <h5 class="news-title">The Earth is not flat.</h5>
-              <h6 class="news-snippet">
-                somwe information about aodnfnef snfdesio.matr fsognorig
-                rdvsfioesnfe kdsf!n sdfhesjifj
-              </h6>
-            </div>
+          <div class="link-tab">
+            <a href="https://www.youtube.com"><img src="https://s.ytimg.com/yts/img/favicon_48-vflVjB_Qk.png" width="32px" /></a>
           </div>
-
-          <div class="news-tab">
-            <div class="news-left"></div>
-            <div class="news-right">
-              <h5 class="news-title">It is not a sphere either.</h5>
-              <h6 class="news-snippet">
-                Hmmmmm? information about aodnfnef snfdesio.matr fsognorig
-                rdvsfioesnfe kdsf!n sdfhesjifj
-              </h6>
-            </div>
+          <div class="link-tab">
+            <a href="https://www.reddit.com"><img src="https://www.reddit.com/favicon.ico" width="32px" /></a>
+          </div>
+          <div class="link-tab">
+            <a href="https://www.amazon.in"><img src="https://www.amazon.in/favicon.ico" width="32px" /></a>
+          </div>
+          <div class="link-tab">
+            <a href="https://www.stackoverflow.com"><img src="https://www.stackoverflow.com/favicon.ico" width="32px" /></a>
+          </div>
+          <div class="link-tab">
+            <a href="https://www.steamcommunity.com"><img src="https://www.steamcommunity.com/favicon.ico" width="32px" /></a>
+          </div>
+          <div class="link-tab">
+            <a href="https://www.primevideo.com"><img src="https://www.primevideo.com/favicon.ico" width="32px" /></a>
+          </div>
+          <div class="link-tab add-tab">
+            <a href="https://www.google.com"></a>
           </div>
         </div>
       </div>
     </div>
-  </body>
+
+    <div class="section-two">
+      <div class="clock-date">
+        <h1 id="clock"></h1>
+        <h4 id="date"></h4>
+      </div>
+      <div class="weather">
+        <h5>Weather</h5>
+        <div class="weather-card">
+          <h1 id="temp" class="temperature">29<span>C</span></h1>
+          <div id="temp-icon" class="weather-icon">
+            <p id="icon-description"></p>
+          </div>
+          <p class="weather-credit">
+            Powered by
+            <a href="https://www.apixu.com/" target="_blank" title="Weather API">Apixu.com</a>
+          </p>
+        </div>
+      </div>
+      <div class="news">
+        <h5>Headlines</h5>
+        <div id="news-section">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>

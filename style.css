@@ -20,6 +20,17 @@ body {
   overflow: hidden;
 }
 
+/* Theme CSS */
+body {
+  background: rgba(43, 45, 66, 1);
+  color: black;
+}
+
+.page {
+  background: #edf2f4;
+  box-shadow: 0 0 50px rgba(237, 242, 244, 0.15);
+}
+
 .settings-button {
   position: absolute;
   cursor: pointer;
@@ -225,7 +236,14 @@ body {
   margin-top: 5px;
 }
 
+.news a {
+  text-decoration: none;
+  color: black;
+  outline: none;
+}
+
 .news-tab {
+  cursor: pointer;
   width: 90%;
   height: 10%;
   background: white;
@@ -239,6 +257,7 @@ body {
 
 .news-left {
   width: 10vh;
+  height: 10vh;
   background: rgba(12, 12, 13, 0.1);
 }
 
@@ -246,34 +265,12 @@ body {
   width: calc(100% - 10vh);
   float: right;
   margin-left: 3px;
+  height: 10vh;
+  overflow: hidden;
 }
 
 .news-title {
-  font-weight: 600;
-}
-
-.news-snippet {
-  font-weight: 300;
-}
-
-/* Alt Theme
-body {
-  background: #edf2f4;
-  color: white;
-}
-
-.page {
-  background: rgba(43, 45, 66, 1);
-  box-shadow: 0 0 50px rgba(43, 45, 66, 0.1);
-} */
-
-/* Theme CSS */
-body {
-  background: rgba(43, 45, 66, 1);
-  color: black;
-}
-
-.page {
-  background: #edf2f4;
-  box-shadow: 0 0 50px rgba(237, 242, 244, 0.15);
+  font-weight: 500;
+  font-family: 'Lato', cursive;
+  color: #383838;
 }
