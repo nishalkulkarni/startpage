@@ -173,15 +173,7 @@ body {
   transition: 0.5s;
 }
 
-.weather-card {
-  width: 90%;
-  height: 20vh;
-  background: white;
-  margin: 8px 0 0 0;
-  border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  position: relative;
-}
+
 
 .temperature {
   font-family: 'Lato', cursive;
@@ -232,45 +224,7 @@ body {
   color: #0073db;
 }
 
-.news {
-  margin-top: 5px;
+.song {
+  margin-top: 10px;
 }
 
-.news a {
-  text-decoration: none;
-  color: black;
-  outline: none;
-}
-
-.news-tab {
-  cursor: pointer;
-  width: 90%;
-  height: 10%;
-  background: white;
-  margin: 10px 0 0 0;
-  border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  position: relative;
-  display: flex;
-}
-
-.news-left {
-  width: 10vh;
-  height: 10vh;
-  background: rgba(12, 12, 13, 0.1);
-}
-
-.news-right {
-  width: calc(100% - 10vh);
-  float: right;
-  margin-left: 3px;
-  height: 10vh;
-  overflow: hidden;
-}
-
-.news-title {
-  font-weight: 500;
-  font-family: 'Lato', cursive;
-  color: #383838;
-}
